@@ -1,6 +1,6 @@
 package com.aston;
 
-public interface ArrayListInterface<E extends Comparable<E>> extends Iterable<E> {
+public interface ArrayListInterface<E> extends Iterable<E> {
     boolean add(E e);
     boolean addByIndex(E e, int index);
     void delete(int index);

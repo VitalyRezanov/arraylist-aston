@@ -4,24 +4,24 @@ import java.util.Iterator;
 
 public class ArrayListIterator<E> implements Iterator<E> {
     private int index = 0;
-    E[] values;
+    E[] list;
 
     public ArrayListIterator(E[] values) {
-        this.values = values;
+        this.list = values;
     }
 
     @Override
     public boolean hasNext() {
-        return index < values.length;
+        return index < list.length;
     }
 
     @Override
     public E next() {
-        return values[index++];
+        return list[index++];
     }
 
     @Override
     public void remove() {
-        //Iterator.super.remove();
     }
+
 }
